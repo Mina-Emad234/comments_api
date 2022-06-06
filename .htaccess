@@ -1,0 +1,6 @@
+RewriteEngine On    # Turn on the rewriting engine
+
+RewriteRule ^comments/([0-9a-zA-Z_-]*)$ ?page=$1 [NC,L]
+RewriteRule ^comments_page/([0-9a-zA-Z_-]*)$ ?comments_page=$1 [NC,L]
+RewriteRule "^api/(.*)$" "?action=$1" [B,PT]
+RewriteRule ^get_api/([0-9]*)$ ?id=$1 [NC,L]

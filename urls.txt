@@ -1,0 +1,50 @@
+#######Brawsers urls
+
+#login page url
+http://localhost:8000/Api_projects/API_Comments/api/login_user
+
+#user login url
+http://localhost:8000/Api_projects/API_Comments/comments/api/sign-in
+
+#comments page
+http://localhost:8000/Api_projects/API_Comments/comments/(page_number)
+
+#user logout
+http://localhost:8000/Api_projects/API_Comments/comments/api/logout
+
+==============================================================================
+
+########API user urls
+
+#Register url   #required data (name-email-password)
+http://localhost:8000/Api_projects/API_Comments/api/register
+
+#login url   #required data (email-password)
+http://localhost:8000/Api_projects/API_Comments/api/login
+
+#update user    #required data (name-email-password-jwt)
+http://localhost:8000/Api_projects/API_Comments/api/update_user
+
+#logout      #required data (jwt)
+http://localhost:8000/Api_projects/API_Comments/api/logout
+
+########API comments urls
+
+#consume comments from external api inserting in database url
+#required data (jwt)
+http://localhost:8000/Api_projects/API_Comments/api/consume
+
+#comments pagination    #required data (jwt)
+http://localhost:8000/Api_projects/API_Comments/comments_page/(page number)
+
+#create comment     #required data (name-email-body-jwt)
+http://localhost:8000/Api_projects/API_Comments/comments_page/create
+
+#update comment     #required data (id-name-email-body-jwt)
+http://localhost:8000/Api_projects/API_Comments/comments_page/update
+
+#show comment       #required data (jwt)
+http://localhost:8000/Api_projects/API_Comments/get_api/(comment id)
+
+#delete comment       #required data (id-jwt)
+http://localhost:8000/Api_projects/API_Comments/comments_page/delete

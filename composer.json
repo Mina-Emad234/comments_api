@@ -1,0 +1,14 @@
+{
+  "autoload": {
+    "classmap": [
+      "./"
+    ]
+  },
+  "require": {
+    "ext-pdo": "*",
+    "ext-curl": "*",
+    "paragonie/sodium_compat": "^1.17",
+    "firebase/php-jwt": "^5.5",
+    "ext-openssl": "*"
+  }
+}
